@@ -21,7 +21,7 @@
 function newGame () {
 var toReturn = {
 	global: {
-		version: 4.802,
+		version: 4.803,
 		isBeta: false,
 		betaV: 0,
 		killSavesBelow: 0.13,
@@ -2738,7 +2738,7 @@ var toReturn = {
 			},
 			progress: function () {
 				if (this.breakpoints.length > this.finished) return prettify(Math.floor(this.evaluate() * 10000) / 10000) + " / " + prettify(this.breakpoints[this.finished]);
-				return "Record of " + prettify(this.evaluate());
+				return "Currently at " + prettify(this.evaluate());
 			},
 			evaluate: function () {
 				return game.stats.heliumHour.value();
